@@ -77,7 +77,9 @@ class _DiaryPageState extends State<DiaryPage> {
                         ]),
                       ],
                     ),
-
+                    TextButton(onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => DiaryData()));
+                    }, child: Text('Text'))
                   ],
                 );
               },

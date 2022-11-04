@@ -1,7 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/Screen/Diary/diary_screen.dart';
+import 'package:untitled/Screen/Time/time_screen.dart';
 import 'package:untitled/Screen/profile/profile_screen.dart';
+
+import 'Result/result_screen.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -75,9 +78,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                     child:  ElevatedButton(
                         onPressed: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilePage()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => TimePage()));
                         },
-                        child: Icon(Icons.time_to_leave,size: 50.0,)),
+                        child: Icon(Icons.timer,size: 50.0,)),
                   ),
                 ),
                 SizedBox(
@@ -93,9 +96,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                     child:  ElevatedButton(
                         onPressed: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilePage()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ResultPage()));
                         },
-                        child: Icon(Icons.person,size: 50.0,)),
+                        child: Icon(Icons.school,size: 50.0,)),
                   ),
                 ),
               ],
